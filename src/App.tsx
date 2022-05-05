@@ -6,6 +6,7 @@ import {items} from './data/Items'
 import { useState, useEffect } from 'react'
 import {getCurrentMonth, filterListByMonth} from './helpers/dateFilter'
 import { TableArea } from './components/TableArea'
+import { InfoArea } from './components/InfoArea'
 
 
 const App = () => {
@@ -27,7 +28,7 @@ const App = () => {
       </C.Header>
       <C.Body>
 
-      {/* Area de info */}
+      <InfoArea currentMonth={currentMonth}/>
 
 
       {/* Area de incerçao */}
