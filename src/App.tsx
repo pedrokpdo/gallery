@@ -5,6 +5,7 @@ import {categories} from './data/categories'
 import {items} from './data/Items'
 import { useState, useEffect } from 'react'
 import {getCurrentMonth, filterListByMonth} from './helpers/dateFilter'
+import { TableArea } from './components/TableArea'
 
 
 const App = () => {
@@ -30,7 +31,7 @@ const App = () => {
       {/* Area de incerçao */}
 
 
-      {/* Tabela de itens */}
+      <TableArea />
 
 
       </C.Body>
