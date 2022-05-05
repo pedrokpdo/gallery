@@ -12,6 +12,8 @@ const App = () => {
   const [list, setList] = useState(items);
   const [filtredList, setFiltredList] = useState<Item[]>([])
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
+  console.log(list);
+  
   
   useEffect(() => {
     setFiltredList(filterListByMonth(list, currentMonth))
@@ -31,7 +33,7 @@ const App = () => {
       {/* Area de incerçao */}
 
 
-      <TableArea />
+      <TableArea list={filtredList}/>
 
 
       </C.Body>
